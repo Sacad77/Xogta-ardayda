@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Student Dashboard</title>
+    <style>
+        :root {
+            --primary: #4e73df;
+            --success: #1cc88a;
+            --danger: #e74a3b;
+            --bg: #f8f9fc;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            padding: 50px; 
+            background-color: var(--bg);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        h2 { color: #5a5c69; margin-bottom: 20px; text-align: center; }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+        }
+
+        thead tr { background-color: var(--primary); color: white; }
+
+        th { padding: 15px; text-transform: uppercase; font-size: 0.85em; letter-spacing: 1px; }
+        
+        th:first-child { border-radius: 10px 0 0 10px; }
+        th:last-child { border-radius: 0 10px 10px 0; }
+
+        tbody tr { background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: 0.3s; }
+        tbody tr:hover { transform: scale(1.01); background-color: #f1f4ff; }
+
+        td { padding: 20px; color: #6e707e; font-weight: 500; }
+        td:first-child { border-radius: 10px 0 0 10px; }
+        td:last-child { border-radius: 0 10px 10px 0; }
+
+        .btn {
+            border: none; padding: 8px 15px; border-radius: 8px;
+            cursor: pointer; font-weight: 600; font-size: 0.8em;
+            transition: 0.3s;
+        }
+        .btn-edit { background: #d1f7e0; color: var(--success); }
+        .btn-edit:hover { background: var(--success); color: white; }
+        
+        .btn-delete { background: #fee2e2; color: var(--danger); }
+        .btn-delete:hover { background: var(--danger); color: white; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Xogta Ardayda</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>NAME</th><th>MATH</th><th>ENGLISH</th><th>SCIENCE</th><th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>C1250095</td><td>Sacad siciid</td><td>90</td><td>100</td><td>80</td>
+                <td>
+                    <button class="btn btn-edit">Edit</button>
+                    <button class="btn btn-delete">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>C125007</td><td>Cabdi raxmaan</td><td>87</td><td>100</td><td>85</td>
+                <td>
+                    <button class="btn btn-edit">Edit</button>
+                    <button class="btn btn-delete">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
